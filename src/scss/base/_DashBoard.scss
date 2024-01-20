@@ -1,0 +1,89 @@
+.apexcharts-menu {
+  min-width: 111px !important;
+}
+#app {
+  font-family: $font-main;
+}
+#chart {
+  padding: 16px !important;
+}
+.meteringTable {
+  max-width: 1800px !important;
+  display: flex;
+  justify-content: center;
+  .v-skeleton-loader {
+    border-radius: 8px !important;
+    width: 1715px;
+  }
+  .v-card {
+    width: 1715px;
+    padding: 16px;
+  }
+}
+.buttonChart {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  height: 94px;
+  max-width: 1800px !important;
+  padding-bottom: 0px;
+  .v-card {
+    width: 1715px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+  }
+  .v-card-item {
+    justify-content: flex-start;
+  }
+  .buttonsMetering {
+    justify-content: flex-end;
+    gap: 15px;
+    display: flex;
+    width: inherit;
+  }
+}
+.chartContainer {
+  max-width: 1800px !important;
+  display: flex;
+  flex-flow: wrap;
+  gap: 15px;
+  justify-content: center;
+  .v-skeleton-loader {
+    border-radius: 8px !important;
+  }
+  .v-skeleton-loader__image {
+    height: 350px;
+    margin: 0.625rem 1rem;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px !important;
+  }
+  .v-skeleton-loader__heading {
+    max-width: 45%;
+    max-height: 20px;
+    margin: 0.625rem 1rem;
+  }
+  .v-skeleton-loader__text {
+    max-width: 30%;
+    margin: 0.625rem 1rem;
+  }
+
+  .chart1 {
+    width: 850px;
+    height: 473px;
+  }
+  .chart2 {
+    width: 1715px;
+    height: 473px;
+  }
+}
+.failed {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .v-card-subtitle {
+    color: #d64235;
+  }
+}

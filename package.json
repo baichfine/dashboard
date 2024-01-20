@@ -8,8 +8,22 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.9",
+    "@mdi/font": "5.9.55",
+    "@vue/apollo-composable": "^4.0.0",
+    "apexcharts": "^3.45.1",
+    "apollo-link-error": "^1.1.13",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "graphql-ws": "^5.14.3",
+    "roboto-fontface": "*",
+    "subscriptions-transport-ws": "^0.11.0",
+    "vue": "^3.2.13",
+    "vue3-apexcharts": "^1.4.4",
+    "vuetify": "^3.0.0-beta.0",
+    "vuex": "^4.0.2",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -18,12 +32,18 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "^1.69.7",
+    "sass-loader": "^14.0.0",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "webpack": "^5.89.0",
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "vue/setup-compiler-macros": true
     },
     "extends": [
       "plugin:vue/vue3-essential",
