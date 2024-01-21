@@ -19,7 +19,7 @@ cd dashboard
 ```
 npm install vuex@next --save
 ```
-### Добавляем Vutify
+### Добавляем Vuetify
 ##### Выбираем 3 версию
 ```
 vue add vuetify
