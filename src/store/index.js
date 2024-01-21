@@ -51,7 +51,6 @@ export default createStore({
     },
     setMeteringArr(state, payload) {
       state.arrMetering = Object.values(payload).reverse()
-      console.log(Object.values(payload).reverse())
     },
     setChartArr(state, payload) {
       payload.forEach((item, key) => {
