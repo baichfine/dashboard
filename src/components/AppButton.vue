@@ -14,6 +14,7 @@
       "
       ><div class="buttonMetering">
         <v-btn
+          :disabled="fetch.value.loadMetering"
           @click="fetch.value.getMetering"
           v-if="!fetch.value.errorStr.error"
           >Обновить</v-btn

@@ -50,7 +50,8 @@ export default createStore({
       }
     },
     setMeteringArr(state, payload) {
-      state.arrMetering = payload
+      state.arrMetering = Object.values(payload).reverse()
+      console.log(Object.values(payload).reverse())
     },
     setChartArr(state, payload) {
       payload.forEach((item, key) => {
@@ -113,7 +114,6 @@ export default createStore({
           },
         ],
       }
-      console.log(state.arrChartNew)
     },
   },
   actions: {},

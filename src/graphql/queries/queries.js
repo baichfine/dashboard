@@ -5,9 +5,7 @@ export const GET_METERING_QUERY = gql`
     metering(
       filter: { sampleBetween: { startDate: $startDate, endDate: $endDate } }
     ) {
-      frequency
       insertedAt
-      totalApEnergy
       totalP
       totalQ
       totalS

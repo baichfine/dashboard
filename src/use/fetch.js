@@ -12,8 +12,8 @@ function createObj() {
   const arrChart = computed(() => store.getters.arrChartNew)
   const loading = ref(true)
   const errorStr = ref({ value: '', error: false })
-  const startDate = subtractHours(new Date(), 1)
-  const endDate = new Date()
+  const startDate = ref(subtractHours(new Date(), 1))
+  const endDate = ref(new Date())
   const chartData = ref(consts.CHART_DATA)
   const chartObject = ref(consts.CHART_OBJECT)
 
@@ -42,7 +42,9 @@ function createObj() {
     if (errorStr.value.error === true) sendToken()
     loading.value = true
     if (errorStr.value.error === false) {
-      await metering.refetch()
+      startDate.value = subtractHours(new Date(), 1)
+      endDate.value = new Date()
+      await metering.load()
       metering.onResult
     }
   }
