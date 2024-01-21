@@ -12,11 +12,11 @@
           : 'Успешно! Данные актуальны на ' +
             fetch.value.newDate(new Date(), 'no')
       "
-      ><div class="buttonsMetering">
+      ><div class="buttonMetering">
         <v-btn
           @click="fetch.value.getMetering"
           v-if="!fetch.value.errorStr.error"
-          >Обновить данные</v-btn
+          >Обновить</v-btn
         >
         <div
           v-else

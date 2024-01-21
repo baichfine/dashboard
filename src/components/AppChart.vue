@@ -62,6 +62,7 @@ const chartOptions = reactive({
         fontSize: '12px',
         fontFamily: 'YS Text Regular Regular, Arial, Helvetica, sans-serif',
       },
+      format: 'dd MMM HH:mm',
     },
     title: {
       text: 'Время, мин',

@@ -26,7 +26,7 @@
   justify-content: center;
   height: 94px;
   max-width: 1800px !important;
-  padding-bottom: 0px;
+  padding-bottom: 0px !important;
   .v-card {
     width: 1715px;
     display: flex;
@@ -37,11 +37,18 @@
   .v-card-item {
     justify-content: flex-start;
   }
-  .buttonsMetering {
+  .buttonMetering {
     justify-content: flex-end;
     gap: 15px;
     display: flex;
     width: inherit;
+
+    .v-btn {
+      background-color: #4e89ae;
+      color: white;
+
+      text-transform: inherit;
+    }
   }
 }
 .chartContainer {

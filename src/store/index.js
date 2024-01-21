@@ -67,6 +67,7 @@ export default createStore({
         state.arrChart[8][key] = item['urmsL2'].toFixed(2)
         state.arrChart[9][key] = item['urmsL3'].toFixed(2)
       })
+
       state.arrChartNew = {
         insertedAt: state.arrChart[0],
         irmsL: [
@@ -112,6 +113,7 @@ export default createStore({
           },
         ],
       }
+      console.log(state.arrChartNew)
     },
   },
   actions: {},
